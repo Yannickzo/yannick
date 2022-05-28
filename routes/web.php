@@ -11,6 +11,7 @@ use App\Http\Controllers\Auth\AuthenticatedSessionController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Client\ClientController;
 use App\Http\Controllers\Shop\ShopController;
+//use App\Http\Controllers\ContactForm;
 
 /*
 |--------------------------------------------------------------------------
@@ -86,4 +87,5 @@ require __DIR__ . '/auth.php';
 //contactForm
 //Route::get('/contact', 'App\Http\Controllers\ContactForm@createform');
 Route::post('/contact', 'App\Http\Controllers\ContactForm@contactform');
+//Route::post('contact', [ContentForm::class, 'contact'])->name('contactform');
 //Route::get('contact', [AppController::class, 'contact'])->name('contact');
